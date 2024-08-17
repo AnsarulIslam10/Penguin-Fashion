@@ -12,22 +12,23 @@
         rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        .roboto{
+        .roboto {
             font-family: "Roboto", sans-serif;
         }
-        .bebas-neue{
+
+        .bebas-neue {
             font-family: "Bebas Neue", sans-serif;
         }
     </style>
 </head>
 
 <body class="roboto">
-    <header>
+    <header class="bg-[#FFFBF0]">
         <nav class="flex justify-between w-3/4 mx-auto pt-10">
             <div class="logo">
                 <img class="w-48" src="icons/Group 33072.png" alt="">
             </div>
-            <div class="nav-titles">
+            <div class="nav-titles hidden sm:block">
                 <ul class="flex gap-4">
                     <li>Home</li>
                     <li>Product</li>
@@ -35,7 +36,26 @@
                     <li>Contact us</li>
                 </ul>
             </div>
+            <div class="sm:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </div>
         </nav>
+
+        <div class="banner lg:flex items-center justify-between gap-40 w-3/4 mx-auto mt-6">
+            <div class="bebas-neue text-7xl">
+                <span class="text-[#FABE4C]">be the penguins</span> <br>
+                <span class="text-[#363958]">of winter</span>
+                <p class="roboto text-base">Lorem Ipsum is simply dummy text of the printing 
+                    and typesetting industry.</p>
+            </div>
+            <div class="w-9/12">
+                <img src="Image/model.png" alt="">
+            </div>
+        </div>
     </header>
 </body>
 
